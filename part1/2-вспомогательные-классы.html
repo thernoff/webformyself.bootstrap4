@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+
+    <title>Hello, world!</title>
+    <style>
+      .bs .row > .col,
+      .bs .row > [class^="col-"] {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: #5a6268;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+
+      .flex-cols {
+        min-height: 10rem;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bs">
+      <div class="container">
+        <div class="row">
+          <div class="col d-lg-none">Скрыто на экранах шире lg</div>
+          <div class="col d-none d-lg-block">Скрыто на экранах меньше lg</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">Sidebar 1</div>
+          <div class="col-md-6">Content</div>
+          <div class="col-md-3 d-none d-md-block">
+            Sidebar 2 (на sm и xs будет скрыто)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bootstrap.js"></script>
+  </body>
+</html>

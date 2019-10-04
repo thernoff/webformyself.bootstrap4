@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <title>Hello, world!</title>
+  <style>
+    .bs .row>.col,
+    .bs .row>[class^="col-"] {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      background-color: #5a6268;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .flex-cols {
+      min-height: 10rem;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bs">
+    <div class="container">
+	<div class="row"><div class="col-md-12">1</div></div>
+      <h4>Колонки одинаковой ширины</h4>
+      <!--
+        Использование класса col приводит к тому, что мы получаем ряд состоящий из колонок одинаковой ширины, причем, не обязательно, что
+        в ряду будет находится заданное число колонок.
+        Например, для 25 колонок будет произведен перенос, и ширина колонок в одном ряду будет отличатся от ширины колонок в другом.
+      -->
+      <h4>Колонки одинаковой ширины в разных рядах</h4>
+	  
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+        <div class="col">13</div>
+        <div class="col">14</div>
+        <div class="col">15</div>
+        <div class="col">16</div>
+        <div class="col">17</div>
+        <div class="col">18</div>
+        <div class="col">19</div>
+        <div class="col">20</div>
+        <div class="col">21</div>
+        <div class="col">22</div>
+        <div class="col">23</div>
+        <div class="col">24</div>
+        <div class="col">25</div>
+      </div>
+      <!--
+        Использование класса col-1 позволяет получить 12 колонок одинаковой ширины
+        во всех рядах.
+      -->
+      <h4>Колонки одинаковой ширины во всех рядах</h4>
+      <div class="row">
+        <div class="col-1">1</div>
+        <div class="col-1">2</div>
+        <div class="col-1">3</div>
+        <div class="col-1">4</div>
+        <div class="col-1">5</div>
+        <div class="col-1">6</div>
+        <div class="col-1">7</div>
+        <div class="col-1">8</div>
+        <div class="col-1">9</div>
+        <div class="col-1">10</div>
+        <div class="col-1">11</div>
+        <div class="col-1">12</div>
+        <div class="col-1">13</div>
+        <div class="col-1">14</div>
+        <div class="col-1">15</div>
+        <div class="col-1">16</div>
+        <div class="col-1">17</div>
+        <div class="col-1">18</div>
+        <div class="col-1">19</div>
+        <div class="col-1">20</div>
+        <div class="col-1">21</div>
+        <div class="col-1">22</div>
+        <div class="col-1">23</div>
+        <div class="col-1">24</div>
+        <div class="col-1">25</div>
+      </div>
+
+      <!--
+        Установка ширины одного столбца
+        Средний блок занимает 6 частей от 12-колоночной сетки,
+        а оставшиеся части будут равномерно распределены.
+      -->
+      <h4>Установка ширины одного столбца</h4>
+      <div class="row">
+        <div class="col">Sidebar 1</div>
+        <div class="col-6">Content</div>
+        <div class="col">Sidebar-2</div>
+      </div>
+
+      <!--
+        Содержание переменной ширины
+        Класс col-auto указывает, что данная колонка будет занимать столько места,
+        сколько ей нужно для показа содержимого. При этом если содержимого будет много,
+        то произойдет перенос.
+      -->
+      <h4>Содержание переменной ширины</h4>
+      <div class="row">
+        <div class="col">Sidebar 1</div>
+        <div class="col-6">Content</div>
+        <div class="col-auto">Sidebar-2</div>
+      </div>
+
+      <!--
+        Колонки одинаковой ширины в несколько строк.
+        Нужно в одной строке размещать по две колонки.
+      -->
+      <h4>Колонки одинаковой ширины в несколько строк</h4>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <!--
+          Данный блок будет занимать 100% ширины, поэтому из-за него произойдет
+          перенос колонок, идущих после него
+        -->
+        <div class="w-100"></div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+      </div>
+      <!--УРОК 5-->
+      <h4>Breakpoints</h4>
+      <h4>Складываение колонок по горизонтали</h4>
+      <div class="row">
+        <!--
+          При размере экрана больше или равно 992px колонки будут иметь одинаковую ширину и находится в одной строке (аналогично классу col),
+          но при размере экрана меньше 992px они "сложатся", т.е. будут занимать полностью целую строку.
+        -->
+        <div class="col-lg">1</div>
+        <div class="col-lg">2</div>
+        <div class="col-lg">3</div>
+      </div>
+      <br />
+      <!--Двухколоночный макет-->
+      <h4>Двухколоночный макет</h4>
+      <div class="row">
+        <div class="col-md-4">Sidebar 1 (col-md-4)</div>
+        <div class="col-md-8">Content (col-md-8)</div>
+      </div>
+      <br />
+
+      <!--Трехколоночный макет-->
+      <h4>Трехколоночный макет</h4>
+      <div class="row">
+        <div class="col-md-3">Sidebar 1 (col-md-3)</div>
+        <div class="col-md-6">Content (col-md-6)</div>
+        <div class="col-md-3">Sidebar 2 (col-md-3)</div>
+      </div>
+
+      <!--Комбинирование классов-->
+      <h4>Комбинирование классов</h4>
+      <div class="row">
+        <div class="col-md-3 col-sm-4">Sidebar 1 (col-md-3 col-sm-4)</div>
+        <div class="col-md-6 col-sm-8">Content (col-md-6 col-sm-8)</div>
+        <div class="col-md-3">Sidebar 2 (col-md-3)</div>
+      </div>
+
+      <!--Переполнение ряда-->
+      <h4>Переполнение ряда</h4>
+      <div class="row">
+        <div class="col-md-3 col-sm-4">Sidebar 1 (col-md-3 col-sm-4)</div>
+        <div class="col-md-6 col-sm-8">Content (col-md-6 col-sm-8)</div>
+        <div class="col-md-4">Sidebar 2 (col-md-4)</div>
+      </div>
+
+      <!--Сброс отступов-->
+      <h4>Сброс отступов (margin-right: 0 и margin-left: 0) с помощью класса no-gutters</h4>
+      <div class="row no-gutters">
+        <div class="col-md-3">Sidebar 1</div>
+        <div class="col-md-6">Content</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <!--УРОК 6-->
+      <h4>Выравнивание ряда по вертикали row.align-items-start</h4>
+      <!--
+        flex-cols - класс (не bootstrap) задающий минимальную высоту блоку
+      -->
+      <div class="row flex-cols align-items-start">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+      </div>
+
+      <h4>Выравнивание ряда по вертикали row.align-items-center</h4>
+      <div class="row flex-cols align-items-center">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+      </div>
+
+      <h4>Выравнивание ряда по вертикали row.align-items-end</h4>
+      <div class="row flex-cols align-items-end">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+      </div>
+
+      <h4>Выравнивание определенной колонки по вертикали</h4>
+      <div class="row flex-cols">
+        <div class="col align-self-start">.align-self-start</div>
+        <div class="col align-self-center">.align-self-center</div>
+        <div class="col align-self-end">.align-self-end</div>
+      </div>
+
+      <h4>Выравнивание ряда по горизонтали row.justify-content-start</h4>
+      <div class="row justify-content-start">
+        <div class="col-4">1</div>
+        <div class="col-4">2</div>
+      </div>
+
+      <h4>Выравнивание ряда по горизонтали row.justify-content-center</h4>
+      <div class="row justify-content-center">
+        <div class="col-4">1</div>
+        <div class="col-4">2</div>
+      </div>
+
+      <h4>Выравнивание ряда по горизонтали row.justify-content-end</h4>
+      <div class="row justify-content-end">
+        <div class="col-4">1</div>
+        <div class="col-4">2</div>
+      </div>
+
+      <h4>Выравнивание ряда по горизонтали row.justify-content-around</h4>
+      <div class="row justify-content-around">
+        <div class="col-2">1</div>
+        <div class="col-2">2</div>
+        <div class="col-2">2</div>
+      </div>
+
+      <h4>Выравнивание ряда по горизонтали row.justify-content-between</h4>
+      <div class="row justify-content-between">
+        <div class="col-2">1</div>
+        <div class="col-2">2</div>
+        <div class="col-2">2</div>
+      </div>
+
+      <!--УРОК 7-->
+      <!--Изменение порядка-->
+      <h4>Классы сортировки</h4>
+      <div class="row">
+        <div class="col-md-3 order-sm-2 order-md-1">Sidebar 1</div>
+        <div class="col-md-6 order-sm-1 order-md-2">Content</div>
+        <div class="col-md-3 order-sm-3 order-md-3">Sidebar 2</div>
+      </div>
+      <br>
+      <!--Предыдущее решение избыточно-->
+      <div class="row">
+        <div class="col-md-6">Content</div>
+        <div class="col-md-3 order-md-first">Sidebar 1</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <!--Отступы-->
+      <h4>Отступы</h4>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">Header (.col-md-6 .offset-md-3)</div>
+      </div>
+
+      <!--Утилиты или классы-помощники-->
+      <h4>Классы-помощники отступов</h4>
+      <div class="row">
+        <!--С помощью классов mr-md-auto и ml-auto можно отцентрировать блок (как вариант)-->
+        <div class="col-sm-3 mr-md-auto ml-md-auto">Header</div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="col-md-3 mr-auto">Header 1</div>
+        <div class="col-md-3">Header 2</div>
+      </div>
+
+      <!--Вложенность сеток-->
+      <h4>Вложенность сеток</h4>
+      <div class="row">
+        <div class="col-md-4">Sidebar 1</div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sunt laborum iusto voluptates, velit
+                illo atque eveniet esse unde soluta! Quasi voluptates nostrum provident sequi incidunt magni porro
+                blanditiis laboriosam.</p>
+            </div>
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti similique at molestias eum
+                adipisci cum saepe architecto neque exercitationem optio ab placeat inventore amet voluptate, voluptates
+                fugit ipsum error?
+                Corrupti et exercitationem, deserunt error aspernatur optio recusandae quia suscipit atque vel
+                repellendus deleniti vitae ab dolores iusto quaerat accusantium laborum! Incidunt, similique
+                perspiciatis numquam ducimus vitae modi velit iste?
+                Sit id aperiam assumenda quidem harum aliquid, minus expedita, nam tenetur velit illo error commodi
+                optio mollitia vitae necessitatibus. Enim odio similique odit, sed saepe at reprehenderit tempore
+                delectus asperiores!</p>
+            </div>
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus illum iure consequuntur dignissimos
+                nisi animi debitis nobis nesciunt maiores expedita exercitationem odit ad quas, cumque ullam corrupti
+                dicta ab provident!Esse reprehenderit inventore eveniet accusamus quaerat sequi fuga dolore reiciendis
+                perspiciatis quas! Mollitia commodi eligendi distinctio, quidem repudiandae quod porro sequi reiciendis
+                culpa ab. Vel magnam vero tempora placeat doloribus!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
