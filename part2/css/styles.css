@@ -164,6 +164,10 @@ h4 {
   .main-header-text {
     background-color: rgba(0,0,0,.4);
   }
+
+  section {
+    padding: 50px 0;
+  }
 }
 @media only screen and (max-width: 991px) {
   .navbar-nav {
@@ -197,14 +201,25 @@ h4 {
     width: 100%;
     margin: 10px auto;
   }
+
+  .btn-shadow {
+    box-shadow: 0 5px 0 #ff5990;
+    padding: 10px 15px;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-widht: 480px) {
+@media only screen and (max-width: 480px) {
+  .section-watch .nav-pills .nav-link{
+    padding: 8px 16px;
+  }
 
+  .section-watch .nav-pills .nav-item{
+    width: 100%;
+  }
 }
 
-@media only screen and (max-widht: 380px) {
+@media only screen and (max-width: 380px) {
   .main-header .navbar-brand {
     font-size: 30px;
   }
